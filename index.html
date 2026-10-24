@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Course Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Replaced by React once the app starts. If you can still read this, the app did not load. -->
+    <div id="root">
+      <p style="font-family:system-ui,sans-serif;padding:1rem">
+        Loading… If this stays on screen, start the app with <code>npm run dev</code> and open
+        <code>http://localhost:5173</code>. Opening index.html directly from a folder will not work.
+      </p>
+    </div>
+    <script>
+      addEventListener('error', function (e) {
+        var r = document.getElementById('root');
+        if (r && r.firstElementChild && r.firstElementChild.tagName === 'P')
+          r.insertAdjacentHTML('beforeend', '<pre style="padding:0 1rem;color:#b3261e;white-space:pre-wrap">Error: ' + String(e.message).replace(/</g, '&lt;') + '</pre>');
+      });
+    </script>
+    <script type="module" src="/main.jsx"></script>
+  </body>
+</html>
